@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Home.master.cs" Inherits="HomePage_Home" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    
+    <div style="height:50%>
+            <div style="text-align:right;display:inline-block; float:left;width:55%;margin:0 auto;">
+                <h1>CAFE</h1>
+            </div>
+            <div style="display:inline-block;Float:right">
+                <asp:Button ID="btnSignout" runat="server" Text="Signout" 
+                onclick="btnSignout_Click" />
+            </div>
+    </div>
+        <div>
+            <br />
+            <asp:Button ID="btnAssets" runat="server" Text="Assets" Height="25px" 
+                Width="80px" onclick="btnAssets_Click" />
+            &nbsp;&nbsp;&nbsp;
+            <asp:Button ID="btnCustomer" runat="server" Text="Customer" Height="25px" 
+                Width="80px" onclick="btnCustomer_Click"/>
+            &nbsp;&nbsp;&nbsp;
+            <asp:Button ID="btnFinance" runat="server" Text="Finance" Height="25px" 
+                Width="80px" onclick="btnFinance_Click"/>
+            &nbsp;&nbsp;&nbsp;
+            <asp:Button ID="btnMenu" runat="server" Text="Menu" Height="25px" Width="80px" onclick="btnMenu_Click" 
+                />
+            &nbsp;&nbsp;&nbsp;
+            <asp:Button ID="btnStaff" runat="server" Text="Staff" Height="25px" 
+                Width="80px" onclick="btnStaff_Click" 
+                />
+            <br />
+            <asp:ContentPlaceHolder ID="CPH" runat="server"></asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

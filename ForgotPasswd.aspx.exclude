@@ -1,0 +1,23 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="ForgotPasswd.aspx.cs" Inherits="ForgotPasswd" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div align="center">
+        <asp:Label ID="lblEmail" runat="server" Text="Email Address"></asp:Label>
+        &nbsp;
+        <asp:TextBox ID="txtEmail" runat="server"
+            placeholder="abc@xyz.com"></asp:TextBox>
+        <br />
+        <br />
+        <asp:Button ID="btnSubmit" runat="server" Text="Send Mail" 
+            onclick="btnSubmit_Click" />
+    </div>
+    </form>
+</body>
+</html>
